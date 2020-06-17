@@ -1,0 +1,176 @@
+body *,
+body *::before,
+body *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body h1 {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+body .search-container form {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+body .search-container form #cityName {
+  width: 84%;
+  padding: 12px;
+}
+
+body .search-container form input[type="submit"] {
+  width: 15%;
+  padding: 12px;
+  cursor: pointer;
+}
+
+body .search-container,
+body .container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+body .container {
+  border: 1px solid #000;
+  border-radius: 15px;
+  display: -ms-grid;
+  display: grid;
+  height: 60vh;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+body .container .weather-info {
+  padding-top: 35px;
+  padding-left: 25px;
+  border-right: 2px solid lightgrey;
+}
+
+body .container .weather-info .div-info {
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .weather-info .div-info span {
+  margin-left: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+body .container #weather-icon {
+  height: 150px;
+  width: 150px;
+  border: 1px solid #000;
+}
+
+body .container table {
+  width: 100%;
+}
+
+body .container table,
+body .container td {
+  border-bottom: 1px solid lightgrey;
+  border-collapse: collapse;
+}
+
+body .container td {
+  padding: 15px;
+}
+
+body .container .toggle-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+body .container .toggle-button span {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-bottom: 25px;
+}
+
+body .container .toggle-button span:first-child, body .container .toggle-button span:last-child {
+  margin-right: 10px;
+}
+
+body .container .toggle-button .switch {
+  position: relative;
+  display: block;
+  width: 90px;
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+body .container .toggle-button .switch input {
+  display: none;
+}
+
+body .container .toggle-button .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #FFF;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border: 3px solid #FFF;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+body .container .toggle-button .switch .slider:before {
+  position: absolute;
+  content: "";
+  bottom: 5px;
+  top: 5px;
+  background-color: lightgrey;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body .container .toggle-button .switch input:checked + .slider {
+  background: #000;
+}
+
+body .container .toggle-button .switch input:checked + .slider:before {
+  -webkit-transform: translateX(47px) rotateZ(45deg);
+          transform: translateX(47px) rotateZ(45deg);
+  background: yellow;
+}
+
+body .container .toggle-button .switch .slider.round {
+  border-radius: 35px;
+  -webkit-box-shadow: 1px 1px 8px 0px;
+          box-shadow: 1px 1px 8px 0px;
+}
+
+body .container .toggle-button .switch .slider.round:before {
+  width: 40%;
+  height: 43%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+}
+/*# sourceMappingURL=styles.css.map */
