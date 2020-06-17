@@ -1,0 +1,21 @@
+{
+    "name": "weather-app-js",
+    "version": "1.0.0",
+    "description": "It is a weather forecast site using the weather API using vanilla JavaScript.",
+    "private": true,
+    "scripts": {
+        "start": "webpack-dev-server --open",
+        "build": "webpack"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/RoodzFernando/weather-app-js.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/RoodzFernando/weather-app-js/issues"
+    },
+    "homepage": "https://github.com/RoodzFernando/weather-app-js#readme"
+}
