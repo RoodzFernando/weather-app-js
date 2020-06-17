@@ -1,3 +1,5 @@
+import './styles.scss';
+
 let city = 'Port-au-Prince';
 const apiKey = '5ebc65c3b3b4a29eb99812e976f35fc3';
 
