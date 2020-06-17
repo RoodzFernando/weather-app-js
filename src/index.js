@@ -30,7 +30,7 @@ function display() {
     city_name.textContent = `${weatherObj.city}, `;
     city_initial.textContent = weatherObj.country;
     current_day.innerHTML = `${weatherObj.days[day_date.getDay()]}, ${day_date.getHours()}:${day_date.getMinutes()<10? String(day_date.getMinutes()).padStart(2,0):day_date.getMinutes()}`;
-    weather_description.textContent = weatherObj.description;
+    weather_description.innerHTML = `Description: ${weatherObj.description}`;
     weather_ico.src = `http://openweathermap.org/img/wn/${weatherObj.icon}@2x.png`
     temperature.innerHTML = `${weatherObj.temperature} &deg;`;
     feel_like.innerHTML = `${weatherObj.feels_like} &deg;`;
