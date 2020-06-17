@@ -13,7 +13,8 @@ It is a weather forecast site using the weather API. Where you search for a spec
 
 ## Built With
 - Javascript
-- API
+- Weather API
+- Webpack
 
 ## How to Run the App Locally
 ```
