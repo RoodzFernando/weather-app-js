@@ -19,7 +19,7 @@ It is a weather forecast site using the weather API. Where you search for a spec
 ```
    git clone https://github.com/RoodzFernando/weather-app-js
    cd weather-app-js
-   open index.html
+   run npm run build
 ```
 
 ## Author:
