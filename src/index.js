@@ -1,29 +1,24 @@
 import './styles.scss';
-const apiKey = '5ebc65c3b3b4a29eb99812e976f35fc3';
+import {
+    city_name,
+    city_initial,
+    weather_description,
+    weather_ico,
+    temperature,
+    current_day,
+    feel_like,
+    min_temp,
+    max_temp,
+    humidity
+} from './domManip';
+import unitToggle from './listeners';
+
+
+
 let weatherObj = {
     days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
 };
-// DOM Manipulation
-let cityName = document.getElementById('cityName');
-let search = document.getElementById('citySearch');
-let checkBox = document.getElementById('toggle-checkbox');
-// inject to the DOM
-// group 1
-let city_name = document.getElementById('city-name');
-let city_initial = document.getElementById('city-code');
-let weather_description = document.getElementById('description');
-let weather_ico = document.getElementById('weather-ico');
-let temperature = document.getElementById('temperature');
-let current_day = document.getElementById('day');
 
-
-// group 2
-let feel_like = document.getElementById('feels_like');
-let min_temp = document.getElementById('min_temp');
-let max_temp = document.getElementById('max_temp');
-let humidity = document.getElementById('humidity');
-
-let city = "";
 let day_date = new Date();
 
 function display() {
@@ -40,7 +35,7 @@ function display() {
 }
 
 
-function getApi(url) {
+export default function getApi(url) {
     fetch(url, {
             mode: 'cors'
         })
@@ -59,33 +54,13 @@ function getApi(url) {
             weatherObj.temp_min = dataInfo.main.temp_min;
             weatherObj.temp_max = dataInfo.main.temp_max;
             weatherObj.humidity = dataInfo.main.humidity;
+            console.log(dataInfo.sys.country);
         })
         .then(() => {
             display();
         })
 
 }
-window.addEventListener('load', () => {
-    city = cityName.value || 'Port-au-Prince';
-    getApi(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`);
-})
-
-function getData(e) {
-    e.preventDefault();
-    city = cityName.value || 'Port-au-Prince';
-    getApi(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`);
-    checkBox.checked = false;
-}
-search.addEventListener('submit', getData);
 
 
-
-checkBox.addEventListener('change', unitToggle);
-
-function unitToggle() {
-    if (checkBox.checked == true) {
-        getApi(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`);
-    } else {
-        getApi(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`);
-    }
-}
+unitToggle();
