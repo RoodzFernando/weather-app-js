@@ -10,6 +10,24 @@ body {
 body {
     h1 {
         text-align: center;
+        margin-top: 15px;
+        margin-bottom: 35px;
+    }
+    .search-container {
+        form {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            text-align: center;
+            #cityName {
+                width: 84%;
+                padding: 12px;
+            }
+            input[type="submit"] {
+                width: 15%;
+                padding: 12px;
+                cursor: pointer;
+            }
+        }
     }
     .search-container,
     .container {
@@ -18,19 +36,37 @@ body {
     }
     .container {
         border: 1px solid #000;
+        border-radius: 15px;
         display: grid;
+        height: 60vh;
         grid-template-columns: 1fr 1fr;
-        .item {
-            border: 1px solid #000;
+        .weather-info {
+            padding-top: 35px;
+            padding-left: 25px;
+            border-right: 2px solid lightgrey;
+            .div-info {
+                margin-top: 35px;
+                display: flex;
+                span {
+                    margin-left: 35px;
+                    justify-content: center;
+                    align-self: center;
+                    font-size: 60px;
+                    font-weight: bold;
+                }
+            }
         }
         #weather-icon {
             height: 150px;
             width: 150px;
             border: 1px solid #000;
         }
+        table {
+            width: 100%;
+        }
         table,
         td {
-            border: 1px solid black;
+            border-bottom: 1px solid lightgrey;
             border-collapse: collapse;
         }
         td {
@@ -39,11 +75,22 @@ body {
         // toggle
         .toggle-button {
             display: flex;
+            padding-top: 35px;
+            justify-content: center;
+            position: relative;
+            span {
+                align-self: center;
+                padding-bottom: 25px;
+                &:first-child,
+                &:last-child {
+                    margin-right: 10px;
+                }
+            }
             .switch {
                 position: relative;
                 display: block;
                 width: 90px;
-                height: 55px;
+                height: 40px;
                 margin-bottom: 30px;
                 input {
                     display: none;
@@ -63,8 +110,8 @@ body {
                 .slider:before {
                     position: absolute;
                     content: "";
-                    bottom: 14px;
-                    top: 8px;
+                    bottom: 5px;
+                    top: 5px;
                     background-color: lightgrey;
                     transition: .5s;
                 }
@@ -77,9 +124,10 @@ body {
                 }
                 .slider.round {
                     border-radius: 35px;
+                    box-shadow: 1px 1px 8px 0px;
                 }
                 .slider.round:before {
-                    width: 43%;
+                    width: 40%;
                     height: 43%;
                     border-top-left-radius: 50px;
                     border-top-right-radius: 50px;
