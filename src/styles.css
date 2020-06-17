@@ -1,1 +1,112 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+body *,
+body *::before,
+body *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body h1 {
+  text-align: center;
+}
+
+body .search-container,
+body .container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+body .container {
+  border: 1px solid #000;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+body .container .item {
+  border: 1px solid #000;
+}
+
+body .container #weather-icon {
+  height: 150px;
+  width: 150px;
+  border: 1px solid #000;
+}
+
+body .container table,
+body .container td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+body .container td {
+  padding: 15px;
+}
+
+body .container .toggle-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .toggle-button .switch {
+  position: relative;
+  display: block;
+  width: 90px;
+  height: 55px;
+  margin-bottom: 30px;
+}
+
+body .container .toggle-button .switch input {
+  display: none;
+}
+
+body .container .toggle-button .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #FFF;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border: 3px solid #FFF;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+body .container .toggle-button .switch .slider:before {
+  position: absolute;
+  content: "";
+  bottom: 14px;
+  top: 8px;
+  background-color: lightgrey;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body .container .toggle-button .switch input:checked + .slider {
+  background: #000;
+}
+
+body .container .toggle-button .switch input:checked + .slider:before {
+  -webkit-transform: translateX(47px) rotateZ(45deg);
+          transform: translateX(47px) rotateZ(45deg);
+  background: yellow;
+}
+
+body .container .toggle-button .switch .slider.round {
+  border-radius: 35px;
+}
+
+body .container .toggle-button .switch .slider.round:before {
+  width: 43%;
+  height: 43%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+}
+/*# sourceMappingURL=styles.css.map */

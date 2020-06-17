@@ -1,4 +1,4 @@
-let city = 'United states';
+let city = 'Port-au-Prince';
 const apiKey = '5ebc65c3b3b4a29eb99812e976f35fc3';
 
 fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`, { mode: 'cors' })
