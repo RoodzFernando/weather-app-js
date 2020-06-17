@@ -12,7 +12,7 @@
 <body>
     <h1>Weather App with JS</h1>
     <div class="search-container">
-        <form action="#">
+        <form action="#" id="citySearch">
             <input placeholder="City Name" type="text" name="city-name" id="cityName" required>
             <input type="submit" value="Search">
         </form>
@@ -30,16 +30,16 @@
         <div class="other-info item">
             <div class="toggle-button">
                 <span>&deg; C</span>
-                <label class="switch">
-          <input type="checkbox" name="" id="">
-          <span class="slider round"></span>
+                <label class="switch" for="toggle-checkbox">
+          <input type="checkbox" name="temp_check" id="toggle-checkbox">
+          <span class="slider round" ></span>
         </label>
                 <span>&deg; F</span>
             </div>
             <table>
                 <tr>
-                    <td>Precipitation</td>
-                    <td>45&percnt;</td>
+                    <td>Feels like</td>
+                    <td>45;</td>
                 </tr>
                 <tr>
                     <td>Min. Temperature</td>
