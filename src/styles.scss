@@ -47,6 +47,11 @@ body {
             .div-info {
                 margin-top: 35px;
                 display: flex;
+                #weather-icon {
+                    img {
+                        width: 100%;
+                    }
+                }
                 span {
                     margin-left: 35px;
                     justify-content: center;

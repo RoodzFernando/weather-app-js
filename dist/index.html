@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <h1>Weather App with JS</h1>
+    <h1>Weather App</h1>
     <div class="search-container">
         <form action="#" id="citySearch">
             <input placeholder="City Name" type="text" name="city-name" id="cityName" required>
@@ -19,11 +19,14 @@
     </div>
     <div class="container">
         <div class="weather-info item">
-            <span id="cityName">Port-au-Prince</span>,<span id="city-code">HT</span>
-            <p id="description">Clouds</p>
+            <span id="city-name"></span><span id="city-code"></span>
+            <p id="day"></p>
+            <p id="description"></p>
             <div class="div-info">
-                <div id="weather-icon">img</div>
-                <span id="temperature">45 &deg;C</span>
+                <div id="weather-icon">
+                    <img id="weather-ico">
+                </div>
+                <span id="temperature"></span>
             </div>
         </div>
 
@@ -39,19 +42,19 @@
             <table>
                 <tr>
                     <td>Feels like</td>
-                    <td>45;</td>
+                    <td id="feels_like"></td>
                 </tr>
                 <tr>
                     <td>Min. Temperature</td>
-                    <td>45</td>
+                    <td id="min_temp"></td>
                 </tr>
                 <tr>
                     <td>Max. Temperature</td>
-                    <td>45</td>
+                    <td id="max_temp"></td>
                 </tr>
                 <tr>
                     <td>Humidity</td>
-                    <td>45</td>
+                    <td id="humidity"></td>
                 </tr>
             </table>
         </div>
