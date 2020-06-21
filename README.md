@@ -26,6 +26,7 @@ It is a weather forecast site using the weather API. Where you search for a spec
 ```
    git clone https://github.com/RoodzFernando/weather-app-js
    cd weather-app-js
+   run npm install
    run npm run build
 ```
 
