@@ -54,7 +54,6 @@ export default function getApi(url) {
             weatherObj.temp_min = dataInfo.main.temp_min;
             weatherObj.temp_max = dataInfo.main.temp_max;
             weatherObj.humidity = dataInfo.main.humidity;
-            console.log(dataInfo.sys.country);
         })
         .then(() => {
             display();
