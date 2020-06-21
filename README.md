@@ -19,6 +19,9 @@ It is a weather forecast site using the weather API. Where you search for a spec
 - Weather API
 - Webpack
 
+## Live version
+### [Click Here](https://rawcdn.githack.com/RoodzFernando/weather-app-js/dde59be6f9f255ea3f73c50e214a12df6f126416/dist/index.html)
+
 ## How to Run the App Locally
 ```
    git clone https://github.com/RoodzFernando/weather-app-js
