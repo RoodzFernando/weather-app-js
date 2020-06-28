@@ -20,7 +20,7 @@ It is a weather forecast site using the weather API. Where you search for a spec
 - Webpack
 
 ## Live version
-### [Click Here](https://rawcdn.githack.com/RoodzFernando/weather-app-js/dde59be6f9f255ea3f73c50e214a12df6f126416/dist/index.html)
+### [Click Here](https://rawcdn.githack.com/RoodzFernando/weather-app-js/e432ee07d9ca69f23879d62131e8979b701bc9a3/dist/index.html)
 
 ## How to Run the App Locally
 ```
