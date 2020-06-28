@@ -9,6 +9,7 @@ import {
     feel_like,
     min_temp,
     max_temp,
+    checkBox,
     humidity
 } from './domManip';
 import unitToggle from './listeners';
@@ -27,7 +28,7 @@ function display() {
     current_day.innerHTML = `${weatherObj.days[day_date.getDay()]}, ${day_date.getHours()}:${day_date.getMinutes()<10? String(day_date.getMinutes()).padStart(2,0):day_date.getMinutes()}`;
     weather_description.innerHTML = `Description: ${weatherObj.description}`;
     weather_ico.src = `http://openweathermap.org/img/wn/${weatherObj.icon}@2x.png`
-    temperature.innerHTML = `${weatherObj.temperature} &deg;`;
+    temperature.innerHTML = `${weatherObj.temperature} &deg;${checkBox.checked ? 'F' : 'C'}`;
     feel_like.innerHTML = `${weatherObj.feels_like} &deg;`;
     min_temp.innerHTML = `${weatherObj.temp_min} &deg;`;
     max_temp.innerHTML = `${weatherObj.temp_max} &deg;`;
