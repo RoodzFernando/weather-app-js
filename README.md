@@ -1,5 +1,5 @@
 ## weather-app-js
- It is a weather forecast site using the weather API using vanilla JavaScript.
+This is a weather forecast site built using JavaScript and the OpenWeather API. You can search for a specific location to see the temperature, and toggle to see the data in Fahrenheit or Celsius.
 
 ## Description:
 
