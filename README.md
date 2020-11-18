@@ -3,8 +3,7 @@ This is a weather forecast site built using JavaScript and the OpenWeather API. 
 
 ## Description:
 
-It is a weather forecast site using the weather API. Where you search for a specific location and toggle displaying the data in Fahrenheit or Celsius.
-
+This is a weather forecast site built using JavaScript and the OpenWeather API. You can search for a specific location to see the temperature, and toggle to see the data in Fahrenheit or Celsius.
 ## Demo
 ![weather1](https://user-images.githubusercontent.com/50186903/84932535-70177f00-b0a2-11ea-88af-1d7fef38a26f.PNG)
 
